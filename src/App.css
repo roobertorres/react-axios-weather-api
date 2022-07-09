@@ -1,0 +1,117 @@
+@font-face {
+  src: url("fonts/SF-Pro-Display-Regular.otf");
+  font-family: "SF-Regular";
+}
+@font-face {
+  src: url("fonts/SF-Pro-Display-Bold.otf");
+  font-family: "SF-Bold";
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "SF-Regular";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+body .App {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+body .App .inputContainer {
+  padding: 1rem;
+  margin: auto;
+}
+body .App .inputContainer input {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 100px 0 0 100px;
+  border-style: none;
+}
+body .App .inputContainer button {
+  background: blueviolet;
+  border-style: none;
+  border-radius: 0 100px 100px 0;
+  padding: 1rem 1.5rem;
+  transition: 0.3s background;
+  color: white;
+}
+body .App .inputContainer button:hover {
+  background: #7900e7;
+}
+body .App .weatherContainer {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.75) -10px 20px 50px 1px;
+  padding: 4rem 6rem;
+  border-radius: 20px;
+}
+body .App .weatherContainer .actualInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+body .App .weatherContainer .actualInfo .cityInfo {
+  display: flex;
+  justify-content: space-between;
+  gap: 15rem;
+}
+body .App .weatherContainer .actualInfo .cityInfo .meteorologicalConditions {
+  display: flex;
+  gap: 1rem;
+}
+body .App .weatherContainer .actualInfo .cityInfo .meteorologicalConditions .umidade, body .App .weatherContainer .actualInfo .cityInfo .meteorologicalConditions .vento {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+body .App .weatherContainer .actualInfo .cityInfo .currentCityStatus {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 1rem;
+}
+body .App .weatherContainer .actualInfo .cityInfo .currentCityStatus .conditionIcon {
+  width: 50px;
+}
+body .App .weatherContainer .actualInfo .cityInfo .currentCityStatus .celsius {
+  font-size: 6rem;
+}
+body .App .weatherContainer .futureInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+body .App .weatherContainer .futureInfo .futureItem {
+  background: rgba(255, 255, 255, 0.41);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  color: rgba(2, 2, 2, 0.7);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+body .App .weatherContainer .futureInfo .futureItem small {
+  font-family: "SF-Bold";
+}
+body .App .weatherContainer .futureInfo .futureItem .forecast {
+  display: flex;
+  flex-direction: column;
+}
+body .App .weatherContainer .futureInfo .futureItem .forecast * {
+  margin: 0;
+}
+body .RT {
+  position: absolute;
+  bottom: 1rem;
+  right: 3rem;
+}
+
+/*# sourceMappingURL=app.css.map */

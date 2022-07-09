@@ -1,0 +1,138 @@
+@font-face {
+	src: url("fonts/SF-Pro-Display-Regular.otf");
+	font-family: "SF-Regular";
+}
+
+@font-face {
+	src: url("fonts/SF-Pro-Display-Bold.otf");
+	font-family: "SF-Bold";
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "SF-Regular";
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.9);
+	color: white;
+
+	.App {
+		display: flex;
+		flex-direction: column;
+		gap: 4rem;
+
+		.inputContainer {
+			padding: 1rem;
+			margin: auto;
+
+			input {
+				background: white;
+				padding: 1rem 1.5rem;
+				border-radius: 100px 0 0 100px;
+				border-style: none;
+			}
+
+			button {
+				background: blueviolet;
+				border-style: none;
+				border-radius: 0 100px 100px 0;
+				padding: 1rem 1.5rem;
+				transition: .3s background;
+				color: white;
+
+				&:hover {
+					background: #7900e7;
+				}
+			}
+		}
+
+		.weatherContainer {
+			background: rgba(255, 255, 255, 0.1);
+			box-shadow: rgba(0,0,0,0.75) -10px 20px 50px 1px;
+			padding: 4rem 6rem;
+			border-radius: 20px;
+
+			.actualInfo {
+				display: flex;
+				flex-direction: column;
+				gap: 3rem;
+
+				.cityInfo {
+					display: flex;
+					justify-content: space-between;
+					gap: 15rem;
+
+					.meteorologicalConditions {
+						display: flex;
+						gap: 1rem;
+
+						.umidade, .vento {
+							display: flex;
+							gap: 0.5rem;
+							align-items: center
+						}
+					}
+
+					.currentCityStatus {
+						display: flex;
+						width: fit-content;
+						align-items: center;
+						gap: 1rem;
+
+						.conditionIcon {
+							width: 50px;
+						}
+
+						.celsius {
+							font-size: 6rem;
+						}
+					}
+				}
+
+
+			}
+
+			.futureInfo {
+				display: flex;
+				justify-content: space-between;
+				margin: 2rem 0;
+
+				.futureItem {
+					background: rgba(255, 255, 255, 0.41);
+					padding: 1rem 2rem;
+					border-radius: 10px;
+					color: rgba(2, 2, 2, 0.7);
+					text-align: center;
+					display: flex;
+					flex-direction: column;
+					gap: 0.5rem;
+
+					small {
+						font-family: "SF-Bold";
+					}
+
+					.forecast {
+						display: flex;
+						flex-direction: column;
+
+						* {
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.RT {
+		position: absolute;
+		bottom: 1rem;
+		right: 3rem;
+	}
+}
