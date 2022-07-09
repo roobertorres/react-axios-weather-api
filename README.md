@@ -1,6 +1,6 @@
 # Weather API with React and Axios
 
-🇧🇷 Este projeto permite ver a previsão do tempo para a cidade requisitada
+🇧🇷 Este projeto permite consultar a previsão do tempo para a cidade desejada
 
 🇺🇸 This project lets you see the forecast for the requested city
 
